@@ -1,6 +1,7 @@
-The purpose of these three programs was to assist research in combinatorics. I participated in a reasearch group where we studied
-Generalized Moztkin Paths. Using specific values for height, coloring, and order, we would generate sequences that we would
-then relate to other combinitorial objects. These programs were built to be used by our research team simply to speed up our calculations.
+The purpose of thesethree programs (MotzkinTriangle.java, ColorCalculator.java, and lAryPathSequenceGenerator.java) was to assist 
+research in combinatorics. I participated in a reasearch group where we studied Generalized Moztkin Paths. Using specific values for 
+height, coloring, and order, we would generate sequences that we would then relate to other combinitorial objects. These programs were 
+built to be used by our research team simply to speed up our calculations.
 
 The first program, MotzkinTriangle.java, allows the user to input an order (m) and values for coloring (represented by X and Y
 vectors). Then, the program calculates a Motzkin Triangle, a infinite lower 2D array where the (n,k) entry is the number of possible
