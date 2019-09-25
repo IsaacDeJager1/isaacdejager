@@ -1,0 +1,19 @@
+The purpose of these three programs was to assist research in combinatorics. I participated in a reasearch group where we studied
+Generalized Moztkin Paths. Using specific values for height, coloring, and order, we would generate sequences that we would
+then relate to other combinitorial objects. These programs were built to be used by our research team simply to speed up our calculations.
+
+The first program, MotzkinTriangle.java, allows the user to input an order (m) and values for coloring (represented by X and Y
+vectors). Then, the program calculates a Motzkin Triangle, a infinite lower 2D array where the (n,k) entry is the number of possible
+Motkzin paths of length n and height k. Next, the user is given a menu of options. The user can print the triangle or print sequences
+that are formed by different operations on the triangle.
+
+The second program, ColorCalculator.java, allows the user to input the first 8 terms of a sequence. Next, it prompts the user for
+an order. Then, the program loops through different values for colors until a Motzkin Triangle is gerneated where the first column
+matches the inputted sequence. This program was not built to be efficient. It's practical purpose was simply to asist us in establishing
+a numeric pattern in the colors. Therefore, the program takes hours to caluculate color values for orders higher than 3. Any order less
+than or equal to 3, the program calculates within a minute.
+
+The third program, lAryPathSequenceGenerator, deals with a new combinitorial object called l-ary paths. Sequences can be grafted from
+l-ary paths by counting the number of possible l-ary paths for a length n. Our research group generalized l-ary paths to account for
+limitations such as order, height, depth, and peaks. When the program is run, it prompts the user to enter values for l (order), a (depth),
+and r (peaks). Then, the program calculates a sequence that represents the number of l-ary paths of length n.
