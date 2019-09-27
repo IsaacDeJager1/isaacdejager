@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class BankSimluation {
+public class simluation1 {
    
    //Declaring public teller arrays to be called by multiple methods
    public static int[] regTellers;
@@ -22,7 +22,7 @@ public class BankSimluation {
       
       Scanner input = new Scanner(System.in);
       
-      System.out.println("Welcome to This Bank!");
+      System.out.println("Welcome to Derptown Bank!");
       System.out.println();
       
       int simRun = 1;
@@ -61,8 +61,16 @@ public class BankSimluation {
             fw.write("\t");
             fw.write("|\t\tRegular\t\t|\t\tBusiness\t\t\n");
             fw.write("----------------------------------------------------\n");
-            fw.write("Average wait: \t|\t\t" + avgRegWait + "\t\t\t\t|\t\t" + avgBusWait + "\n");
-            fw.write("Longest wait: \t|\t\t" + longestRegWait + "\t\t\t\t|\t\t" + longestBusWait + "\n\n");
+            fw.write("Average wait: \t|\t\t" + avgRegWait);
+            if(avgRegWait < 100) {
+               fw.write("\t");
+            }
+            fw.write("\t\t\t|\t\t" + avgBusWait + "\n");
+            fw.write("Longest wait: \t|\t\t" + longestRegWait + "\t\t\t");
+            if(longestRegWait < 100) {
+               fw.write("\t");
+            }
+            fw.write("|\t\t" + longestBusWait + "\n\n");
             
          }
          fw.write("====================================================");
@@ -136,11 +144,11 @@ public class BankSimluation {
       else {
          timeSince0 = 16 * 60 + 30;
       }
-      System.out.println("=======================================");
+      System.out.println("==================================================================================================");
       System.out.println("Starting simluation " + calcClock(timeSince0) + " - " + 
          calcClock(timeSince0 + 90) + ":");
-      System.out.println("Time  |  Regular line  |  Business line");
-      System.out.println("---------------------------------------");
+      System.out.println("Time  |  Regular line  |  Business line  |  Regular customers served  |  Business customers served");
+      System.out.println("--------------------------------------------------------------------------------------------------");
       
       
       //true = regular, false =  business
@@ -165,10 +173,10 @@ public class BankSimluation {
                System.out.print("\t");
             }
             System.out.print("  |  " + regTellersServed);
-            for(int i = 0; i < 11; i++) {
+            for(int i = 0; i < 7; i++) {
                System.out.print("\t");
             }
-            System.out.println("  |  " + busTellersServed);
+            System.out.println("    |  " + busTellersServed);
          }
          
          //If the simulation has been running for less than 90 seconds, then continue adding customers
@@ -341,7 +349,7 @@ public class BankSimluation {
       //Displaying output of one peak time of a simulation
       System.out.println("Total number of customers: " + totalNumOfCus);
       System.out.println("Time finished serving: " + calcClock(timeSince0 + time));
-      System.out.println("======================================================================================================================");
+      System.out.println("==================================================================================================");
       System.out.println();
 
    }
