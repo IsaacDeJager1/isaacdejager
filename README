@@ -1,4 +1,4 @@
-The purpose of thesethree programs (MotzkinTriangle.java, ColorCalculator.java, and lAryPathSequenceGenerator.java) was to assist 
+The purpose of the first three programs (MotzkinTriangle.java, ColorCalculator.java, and lAryPathSequenceGenerator.java) was to assist 
 research in combinatorics. I participated in a reasearch group where we studied Generalized Moztkin Paths. Using specific values for 
 height, coloring, and order, we would generate sequences that we would then relate to other combinitorial objects. These programs were 
 built to be used by our research team simply to speed up our calculations.
@@ -18,3 +18,5 @@ The third program, lAryPathSequenceGenerator, deals with a new combinitorial obj
 l-ary paths by counting the number of possible l-ary paths for a length n. Our research group generalized l-ary paths to account for
 limitations such as order, height, depth, and peaks. When the program is run, it prompts the user to enter values for l (order), a (depth),
 and r (peaks). Then, the program calculates a sequence that represents the number of l-ary paths of length n.
+
+
