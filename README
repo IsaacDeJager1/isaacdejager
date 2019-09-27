@@ -20,3 +20,14 @@ limitations such as order, height, depth, and peaks. When the program is run, it
 and r (peaks). Then, the program calculates a sequence that represents the number of l-ary paths of length n.
 
 
+
+The last program (BankSimulation.java) uses a seperate class file (Customer1.java) to simulate a bank during its peak hours. This bank has 
+two types of customers, business and regular. There are also two types of bank tellers, business and regular. Regular customer can only be
+served at regular tellers, while business customers can be served at either teller. The user is prompted to enter the number of tellers, 
+and then the simulation prints out data regarding how many customers were served and times the tellers finished serving. Additional
+information is printed to a seperate file. The simulation represents each passing second as a minute in the simulation. Hence, since each
+peak time is 1.5 hours, the simulation takes 3 minutes to complete both peak times. The user is then given the option to run the simulation
+again with a different number of tellers. Should the line for the customers be so long that customers that came into the bank during the first
+peak time are still in line when the second peak time starts, the simulation for the first peak time halts, notifies the user, and starts the
+second peak time with no customers currently in the bank. The seperate class file records information about the customers, such as customer 
+type and how long they have been waiting.
