@@ -1,4 +1,4 @@
-The purpose of the first three programs (MotzkinTriangle.java, ColorCalculator.java, and lAryPathSequenceGenerator.java) was to assist 
+The purpose of these three programs (MotzkinTriangle.java, ColorCalculator.java, and lAryPathSequenceGenerator.java) was to assist 
 research in combinatorics. I participated in a reasearch group where we studied Generalized Moztkin Paths. Using specific values for 
 height, coloring, and order, we would generate sequences that we would then relate to other combinitorial objects. These programs were 
 built to be used by our research team simply to speed up our calculations.
@@ -18,16 +18,3 @@ The third program, lAryPathSequenceGenerator, deals with a new combinitorial obj
 l-ary paths by counting the number of possible l-ary paths for a length n. Our research group generalized l-ary paths to account for
 limitations such as order, height, depth, and peaks. When the program is run, it prompts the user to enter values for l (order), a (depth),
 and r (peaks). Then, the program calculates a sequence that represents the number of l-ary paths of length n.
-
-
-
-The last program (BankSimulation.java) uses a seperate class file (Customer1.java) to simulate a bank during its peak hours. This bank has 
-two types of customers, business and regular. There are also two types of bank tellers, business and regular. Regular customer can only be
-served at regular tellers, while business customers can be served at either teller. The user is prompted to enter the number of tellers, 
-and then the simulation prints out data regarding how many customers were served and times the tellers finished serving. Additional
-information is printed to a seperate file. The simulation represents each passing second as a minute in the simulation. Hence, since each
-peak time is 1.5 hours, the simulation takes 3 minutes to complete both peak times. The user is then given the option to run the simulation
-again with a different number of tellers. Should the line for the customers be so long that customers that came into the bank during the first
-peak time are still in line when the second peak time starts, the simulation for the first peak time halts, notifies the user, and starts the
-second peak time with no customers currently in the bank. The seperate class file records information about the customers, such as customer 
-type and how long they have been waiting.
